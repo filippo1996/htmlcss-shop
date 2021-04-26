@@ -162,6 +162,11 @@ footer{
     height: 100px;
 }
 
+footer h3{
+    line-height: 100px;
+    text-align: center;
+}
+
 
 /* debug */
 .debug header{
