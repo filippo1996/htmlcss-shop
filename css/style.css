@@ -39,16 +39,22 @@ header nav{
 
 main .contains-box-shop{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .contains-box-shop .box-shop{
-    width: calc((100% / 3) - 20px);
+    width: calc((100% / 3) - ( 20px / 3 ));
     float: left;
 }
 
 .contains-box-shop .box-shop:nth-child(2){
     margin: 0 10px;
+}
+
+
+/* footer */
+footer{
+    height: 100px;
 }
 
 
@@ -78,4 +84,8 @@ main .contains-box-shop{
 .debug .contains-box-shop .box-shop{
     height: 200px;
     background-color: gray;
+}
+
+.debug footer{
+    background-color: red;
 }
