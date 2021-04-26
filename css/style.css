@@ -1,0 +1,51 @@
+/* common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header{
+    height: 100px;
+}
+
+header .box-logo{
+    height: 60%;
+    width: 20%;
+    margin: 0 auto;
+}
+
+header nav{
+    height: 40%;
+}
+
+
+/* main */
+.container-main{
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+/* debug */
+.debug header{
+    background-color: red;
+}
+
+.debug .box-logo{
+    background-color: green;
+}
+
+.debug header nav{
+    background-color: blue;
+}
+
+.debug .container-main{
+    height: 800px;
+    background-color: chocolate;
+}
