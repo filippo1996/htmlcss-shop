@@ -18,23 +18,43 @@ body{
 /* header */
 header{
     height: 100px;
+    padding-top: 10px;
 }
 
 header .box-logo{
-    height: 60%;
+    height: 60px;
     width: 20%;
+    text-align: center;
     margin: 0 auto;
 }
 
+#logo{
+    height: 100%;
+    vertical-align: middle;
+}
+
+.box-logo .text-logo{
+    font-size: 50px;
+    font-weight: 900;
+    vertical-align: middle;
+}
+
 header nav{
-    height: 40%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+header nav li{
+    display: inline-block;
+    margin-right: 30px;
 }
 
 
 /* main */
 .container-main{
     width: 70%;
-    margin: 20px auto;
+    margin: 40px auto 30px;
 }
 
 main .contains-box-shop{
@@ -49,6 +69,10 @@ main .contains-box-shop{
 
 .contains-box-shop .box-shop:nth-child(2){
     margin: 0 10px;
+}
+
+.contains-box-shop .box-shop img{
+    height: 100px;
 }
 
 
@@ -68,7 +92,7 @@ footer{
 }
 
 .debug header nav{
-    background-color: blue;
+    background-color: skyblue;
 }
 
 .debug .container-main{
