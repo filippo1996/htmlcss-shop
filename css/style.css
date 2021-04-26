@@ -19,6 +19,10 @@ body{
     text-transform: uppercase;
 }
 
+.effect-hover{
+    display: none;
+}
+
 /* header */
 header{
     height: 100px;
@@ -63,7 +67,7 @@ header nav li{
 
 main .contains-box-shop{
     width: 90%;
-    margin: 0 auto 20px;
+    margin: 0 auto 80px;
 }
 
 .contains-box-shop .box-shop{
@@ -87,6 +91,14 @@ main .contains-box-shop{
     filter: brightness(90%);
 }
 
+.box-shop:hover .origin{
+    display: none;
+}
+
+.box-shop:hover .effect-hover{
+    display: block;
+}
+
 .box-shop .card-img .wishlist{
     position: absolute;
     top: 15px;
@@ -99,7 +111,7 @@ main .contains-box-shop{
 
 .box-shop .card-img .tags{
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
 }
 
@@ -107,6 +119,7 @@ main .contains-box-shop{
     color: white;
     font-weight: 400;
     padding: 3px;
+    margin-bottom: 15px;
 }
 
 .card-img .tags .plate.discount{
@@ -117,6 +130,17 @@ main .contains-box-shop{
     background-color: green;
 }
 
+.card-img .choice-color{
+    margin-top: 15px;
+    background-color: white;
+}
+
+.card-img .choice-color img{
+    width: calc(100% / 7 - 4px);
+    height: 60px;
+    filter: none;
+}
+
 .content-info-shop .price{
     margin-top: 15px;
 }
@@ -124,6 +148,12 @@ main .contains-box-shop{
 .content-info-shop .price span{
     color: red;
     font-weight: 700;
+}
+
+.box-shop .category{
+    height: 72px;
+    background-color: green;
+    padding: 10px;
 }
 
 
@@ -147,7 +177,6 @@ footer{
 }
 
 .debug .container-main{
-    height: 1000px;
     background-color: chocolate;
 }
 
@@ -157,7 +186,6 @@ footer{
 }
 
 .debug .contains-box-shop .box-shop{
-    height: 600px;
     background-color: gray;
 }
 
@@ -170,10 +198,10 @@ footer{
 }
 
 .debug .content-info-shop{
-    height: 150px;
     background-color: violet;
 }
 
 .debug .tags{
     background-color: sandybrown;
 }
+
