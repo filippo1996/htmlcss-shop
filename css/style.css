@@ -9,6 +9,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 /* header */
 header{
     height: 100px;
@@ -31,6 +37,20 @@ header nav{
     margin: 20px auto;
 }
 
+main .contains-box-shop{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contains-box-shop .box-shop{
+    width: calc((100% / 3) - 20px);
+    float: left;
+}
+
+.contains-box-shop .box-shop:nth-child(2){
+    margin: 0 10px;
+}
+
 
 /* debug */
 .debug header{
@@ -48,4 +68,14 @@ header nav{
 .debug .container-main{
     height: 800px;
     background-color: chocolate;
+}
+
+.debug main .contains-box-shop{
+    background-color: darkturquoise;
+    border: 2px solid black;
+}
+
+.debug .contains-box-shop .box-shop{
+    height: 200px;
+    background-color: gray;
 }
