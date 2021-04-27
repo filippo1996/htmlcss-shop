@@ -120,6 +120,7 @@ main .contains-box-shop{
     font-weight: 400;
     padding: 3px;
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 .card-img .tags .plate.discount{
